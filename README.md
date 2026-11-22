@@ -1,132 +1,85 @@
-<h1>SmartSwach</h1>
+# SmartSwach — Community Waste Management and Green-Space Mapping
 
-<h2>Overview</h2>
+SmartSwach is a community-focused waste management platform designed to help residents report civic issues, track complaint resolution, and explore green spaces in Mumbai. The project combines a mobile-friendly reporting experience, an administrative dashboard, and geospatial mapping.
 
-SmartSwach is a community-driven platform that allows users to report waste management issues, track complaint resolutions, and explore green spaces in Mumbai. The project integrates machine learning, geospatial data analysis, and a web-based dashboard to ensure efficient waste management.
+## Problem Statement
 
-<h3>Features</h3>
+Civic issues such as garbage accumulation, clogged drains, and water shortages need a clear reporting and follow-up process. SmartSwach provides a digital workflow for submitting reports, tracking their status, and helping administrators monitor resolution progress.
 
-<h2>1. User Page (Mobile App)</h2>
+## Key Features
 
-Users can register complaints regarding:
+### 1. Citizen Issue Reporting
+- Submit reports for garbage pile-ups, clogged drains, and water shortages.
+- Capture the user's location when submitting a complaint.
+- Attach photographs to provide context for reported issues.
+- Track complaint status, including pending, in progress, and resolved.
 
-Garbage pile-ups
+### 2. Administration Dashboard
+- Separate administrative access for complaint management.
+- Review submitted complaints and update resolution status.
+- Monitor total, pending, and resolved complaints.
 
-Clogged drains
+### 3. Green-Space Discovery
+- Display mapped green spaces using geospatial visualizations.
+- Use OpenStreetMap data to explore parks, forests, and recreational grounds.
+- Highlight locations that may need further review or conservation.
 
-Water shortages
+## Technology Stack
 
-USER login
+| Area | Technologies |
+|---|---|
+| Backend | Python, Flask, FastAPI |
+| Frontend | React, Next.js |
+| Database | PostgreSQL |
+| Machine Learning / Image Processing | TensorFlow, OpenCV |
+| Geospatial Mapping | GeoPandas, Folium, Pyrosm |
+| Map Data | OpenStreetMap |
 
-Live geolocation capture while submitting complaints
+The repository may contain multiple application components; check the source folders and dependency files for the exact setup of each component.
 
-Users can upload photos for better issue verification
+## Local Development
 
-Complaint status tracking (pending, resolved, in-progress)
+### Prerequisites
+- Python 3.8 or later
+- Node.js and npm
+- PostgreSQL
 
-<h2>2. Admin Page (Web Dashboard)</h2>
+### Backend
 
-Sub-admin and main admin portals to process complaints
-
-Real-time updates on complaints and their resolution status
-
-Performance tracking (total complaints, pending issues, resolved cases)
-
-<h2>3. Green Space Page</h2>
-
-Interactive map visualization using Folium
-
-Extracts land-use data from OpenStreetMap (OSM) to identify:
-
-Parks
-
-Forests
-
-Recreational grounds
-
-Identifies potential green spaces for conservation and development
-
-Separate page for unidentified green spaces, which will be updated as data expands
-
-Setup Instructions
-
-<h2>Prerequisites</h2>
-
-Python 3.8+
-
-Node.js & npm (for frontend development)
-
-PostgreSQL (for database storage)
-
-Installation Steps
-
-Clone the repository:
-
-git clone https://github.com/Shivam007kumar/Smartswach.git
-cd Smartswach
-
-Install backend dependencies:
-
+```bash
+git clone https://github.com/priyanshukannaujiya/SiliconMafia_Bytecamp2025.git
+cd SiliconMafia_Bytecamp2025
 pip install -r requirements.txt
+python app.py
+```
 
-Install frontend dependencies:
+### Frontend
 
+If the frontend is in the `frontend` directory:
+
+```bash
 cd frontend
 npm install
-
-Run the backend server:
-
-python app.py
-
-Run the frontend app:
-
 npm start
+```
 
-Technologies Used
+Check the project configuration if your local branch uses a different entry point or start script.
 
-Backend: Flask, FastAPI
+## Potential Applications
 
-Frontend: React, Next.js
+- Community-led civic issue reporting.
+- Municipal complaint tracking and prioritization.
+- Urban waste-management monitoring.
+- Green-space discovery and geospatial planning.
 
-Database: PostgreSQL
+## Project Context
 
-Machine Learning: OpenCV, TensorFlow (for complaint filtering)
+Developed as a team project for Bytecamp 2025.
 
-Geospatial Analysis: GeoPandas, Folium, Pyrosm (for green space visualization)
+## Author / Contributor
 
-Contributors
+Priyanshu Kannaujiya — UI/UX contribution.
 
-<<<<<<< HEAD
-Heramb Bahe - Lead Developer
+## Repository
 
-Shivam Kumar - co Developer
-
-Priyanshu Kannaujiya - ui/ux
-=======
-heramb bahe - Lead Developer
-
-Shivam Kumar - co Developer
-
-Priyanshu kannaujiya - ui/ux
-
-
-License
-
-This project is open-source under the MIT License.
-
-Future Enhancements
-
-AI-based complaint prioritization
-
-Integration with BMC's official portal
-
-Mobile notifications for updates on complaints
-
-Expansion to other cities
-
-
-Developed with ❤ for a cleaner and greener Mumbai 🌱
-=======
-Developed with ❤️ for a cleaner and greener Mumbai 🌱
-
-# Smartswach
+https://github.com/priyanshukannaujiya/SiliconMafia_Bytecamp2025
